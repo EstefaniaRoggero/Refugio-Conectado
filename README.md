@@ -74,48 +74,48 @@ Versiones declaradas en `frontend/package.json` y `backend/package.json`.
 
 ### Frontend
 
-| Tecnología | Versión declarada | Uso en el proyecto |
-|------------|-------------------|--------------------|
-| React | 18.3 | Interfaz |
-| React DOM | 18.3 | Renderizado |
-| Vite | 5.4 | Desarrollo y build |
-| React Router DOM | 6.26 | Rutas y sedes |
-| Tailwind CSS | 3.4 | Estilos |
-| Zustand | 4.5 | Sesión, tema y sede activa |
-| Axios | 1.7 | Cliente HTTP |
-| React Hook Form | 7.53 | Formularios |
-| Framer Motion | 11.5 | Animación |
-| Recharts | 2.12 | Gráficos del tablero |
-| Leaflet y React Leaflet | 1.9 y 4.2 | Mapas |
-| qrcode.react | 4.2 | QR de mascotas |
-| SweetAlert2 | 11.14 | Avisos |
-| Lucide React | 0.441 | Iconos |
-| @react-oauth/google | 0.12 | Acceso con Google |
+| Tecnología              | Versión declarada | Uso en el proyecto         |
+| ----------------------- | ----------------- | -------------------------- |
+| React                   | 18.3              | Interfaz                   |
+| React DOM               | 18.3              | Renderizado                |
+| Vite                    | 5.4               | Desarrollo y build         |
+| React Router DOM        | 6.26              | Rutas y sedes              |
+| Tailwind CSS            | 3.4               | Estilos                    |
+| Zustand                 | 4.5               | Sesión, tema y sede activa |
+| Axios                   | 1.7               | Cliente HTTP               |
+| React Hook Form         | 7.53              | Formularios                |
+| Framer Motion           | 11.5              | Animación                  |
+| Recharts                | 2.12              | Gráficos del tablero       |
+| Leaflet y React Leaflet | 1.9 y 4.2         | Mapas                      |
+| qrcode.react            | 4.2               | QR de mascotas             |
+| SweetAlert2             | 11.14             | Avisos                     |
+| Lucide React            | 0.441             | Iconos                     |
+| @react-oauth/google     | 0.12              | Acceso con Google          |
 
 El empaquetado también usa `@vitejs/plugin-react`, PostCSS y Autoprefixer.
 
 ### Backend
 
-| Tecnología | Versión declarada | Uso en el proyecto |
-|------------|-------------------|--------------------|
-| Node.js con módulos ES | — | Entorno de ejecución |
-| Express | 4.21 | API REST |
-| mysql2 | 3.11 | MySQL |
-| jsonwebtoken | 9.0 | Sesiones JWT |
-| bcryptjs | 2.4 | Contraseñas |
-| google-auth-library | 9.15 | Verificación del token de Google |
-| multer | 1.4 | Carga de imágenes |
-| @vercel/blob | 2.8 | Imágenes persistentes si hay token de Blob |
-| express-validator | 7.2 | Validación |
-| helmet | 7.1 | Cabeceras de seguridad |
-| cors | 2.8 | Origen permitido |
-| compression | 1.8 | Respuestas comprimidas |
-| express-rate-limit | 7.4 | Límite de solicitudes |
-| morgan | 1.10 | Registro de peticiones |
-| dotenv | 16.4 | Variables de entorno |
-| openai | 6.42 | Cliente compatible con Groq y OpenAI |
-| undici | 8.4 | Opciones de conexión del cliente de IA |
-| nodemon | 3.1 | Recarga en desarrollo |
+| Tecnología             | Versión declarada | Uso en el proyecto                         |
+| ---------------------- | ----------------- | ------------------------------------------ |
+| Node.js con módulos ES | —                 | Entorno de ejecución                       |
+| Express                | 4.21              | API REST                                   |
+| mysql2                 | 3.11              | MySQL                                      |
+| jsonwebtoken           | 9.0               | Sesiones JWT                               |
+| bcryptjs               | 2.4               | Contraseñas                                |
+| google-auth-library    | 9.15              | Verificación del token de Google           |
+| multer                 | 1.4               | Carga de imágenes                          |
+| @vercel/blob           | 2.8               | Imágenes persistentes si hay token de Blob |
+| express-validator      | 7.2               | Validación                                 |
+| helmet                 | 7.1               | Cabeceras de seguridad                     |
+| cors                   | 2.8               | Origen permitido                           |
+| compression            | 1.8               | Respuestas comprimidas                     |
+| express-rate-limit     | 7.4               | Límite de solicitudes                      |
+| morgan                 | 1.10              | Registro de peticiones                     |
+| dotenv                 | 16.4              | Variables de entorno                       |
+| openai                 | 6.42              | Cliente compatible con Groq y OpenAI       |
+| undici                 | 8.4               | Opciones de conexión del cliente de IA     |
+| nodemon                | 3.1               | Recarga en desarrollo                      |
 
 ### Base de datos
 
@@ -193,11 +193,11 @@ Las rutas del frontend se cargan de forma diferida. El backend separa rutas, con
 
 Puertos usados en local:
 
-| Servicio | Dirección |
-|----------|-----------|
-| Frontend | `http://127.0.0.1:5173` |
-| API | `http://localhost:5000` |
-| MySQL | `localhost:3306`, salvo que se cambie `DB_PORT` |
+| Servicio | Dirección                                       |
+| -------- | ----------------------------------------------- |
+| Frontend | `http://127.0.0.1:5173`                         |
+| API      | `http://localhost:5000`                         |
+| MySQL    | `localhost:3306`, salvo que se cambie `DB_PORT` |
 
 Google, Groq, OpenAI, WhatsApp y Vercel Blob son opcionales. La aplicación abre sin ellos. El recomendador y Luna necesitan una clave de IA. El acceso con Google necesita un Client ID.
 
@@ -274,11 +274,11 @@ Para un administrador de una sede existente también está `npm run create-admin
 
 ### Sedes de ejemplo
 
-| Sede | Slug |
-|------|------|
+| Sede              | Slug                |
+| ----------------- | ------------------- |
 | Villa del Rosario | `villa-del-rosario` |
-| Pilar | `pilar` |
-| Luque | `luque` |
+| Pilar             | `pilar`             |
+| Luque             | `luque`             |
 
 Ejemplo local: `http://127.0.0.1:5173/villa-del-rosario/mascotas`.
 
@@ -288,39 +288,39 @@ Los archivos `.env` no se versionan. Los nombres siguientes salen de `backend/.e
 
 ### Backend
 
-| Variable | Obligatoria | Para qué sirve |
-|----------|-------------|----------------|
-| `PORT` | No | Puerto de la API. Si falta, usa 5000. |
-| `NODE_ENV` | No | `development` en local. `production` desactiva el seed de demostración. |
-| `DB_HOST`, `DB_PORT`, `DB_USER`, `DB_PASSWORD`, `DB_NAME` | Sí, para operar | Conexión MySQL. |
-| `JWT_SECRET` | Sí | Firma de sesión. Tiene que ser aleatorio y de al menos 32 caracteres. |
-| `JWT_EXPIRES_IN` | No | Vigencia del token. El ejemplo usa `7d`. |
-| `SUPER_ADMIN_EMAIL`, `SUPER_ADMIN_PASSWORD` | Solo para crear el primer acceso global | Si ambos tienen valor al migrar, se crea o actualiza esa cuenta. |
-| `DEMO_ADMIN_PASSWORD`, `DEMO_USER_PASSWORD` | No | Contraseñas del seed de desarrollo. Si faltan, se generan al azar. |
-| `FRONTEND_URL` | Sí, en un despliegue | Origen permitido por CORS. |
-| `UPLOAD_MAX_SIZE` | No | Tamaño máximo de imagen, en bytes. |
-| `GOOGLE_CLIENT_ID` | No | Mismo identificador que en el frontend. Sin él, el acceso con Google no se ofrece. |
-| `AI_PROVIDER` | No | `groq` u `openai`. Si falta, se elige según la clave presente. |
-| `GROQ_API_KEY` o `OPENAI_API_KEY` | No | Activan el recomendador y Luna. |
-| `AI_MODEL` | No | Modelo del proveedor elegido. |
-| `BLOB_READ_WRITE_TOKEN` | No | Si existe, las imágenes se guardan en Vercel Blob en lugar del disco local. |
-| `WHATSAPP_TOKEN`, `WHATSAPP_PHONE_NUMBER_ID` | No | API de WhatsApp de Meta. Sin alguno de los dos, el webhook queda desactivado. |
-| `WHATSAPP_VERIFY_TOKEN`, `WHATSAPP_APP_SECRET` | No | Verificación y firma de los mensajes de Meta. |
-| `WHATSAPP_PUBLIC_NUMBER` | No | Número público para el enlace de chat. Usá un número propio, no un ejemplo. |
-| `WHATSAPP_DEFAULT_REFUGIO_SLUG` | No | Sede por defecto del canal de WhatsApp. |
-| `DEV_EXPONER_TOKEN_RESET` | No | Solo desarrollo. Expone el token de recuperación en la respuesta. |
-| `DEV_TLS_INSECURE` | No | Solo desarrollo, ante un fallo local de certificado. No lo uses en producción. |
+| Variable                                                  | Obligatoria                             | Para qué sirve                                                                     |
+| --------------------------------------------------------- | --------------------------------------- | ---------------------------------------------------------------------------------- |
+| `PORT`                                                    | No                                      | Puerto de la API. Si falta, usa 5000.                                              |
+| `NODE_ENV`                                                | No                                      | `development` en local. `production` desactiva el seed de demostración.            |
+| `DB_HOST`, `DB_PORT`, `DB_USER`, `DB_PASSWORD`, `DB_NAME` | Sí, para operar                         | Conexión MySQL.                                                                    |
+| `JWT_SECRET`                                              | Sí                                      | Firma de sesión. Tiene que ser aleatorio y de al menos 32 caracteres.              |
+| `JWT_EXPIRES_IN`                                          | No                                      | Vigencia del token. El ejemplo usa `7d`.                                           |
+| `SUPER_ADMIN_EMAIL`, `SUPER_ADMIN_PASSWORD`               | Solo para crear el primer acceso global | Si ambos tienen valor al migrar, se crea o actualiza esa cuenta.                   |
+| `DEMO_ADMIN_PASSWORD`, `DEMO_USER_PASSWORD`               | No                                      | Contraseñas del seed de desarrollo. Si faltan, se generan al azar.                 |
+| `FRONTEND_URL`                                            | Sí, en un despliegue                    | Origen permitido por CORS.                                                         |
+| `UPLOAD_MAX_SIZE`                                         | No                                      | Tamaño máximo de imagen, en bytes.                                                 |
+| `GOOGLE_CLIENT_ID`                                        | No                                      | Mismo identificador que en el frontend. Sin él, el acceso con Google no se ofrece. |
+| `AI_PROVIDER`                                             | No                                      | `groq` u `openai`. Si falta, se elige según la clave presente.                     |
+| `GROQ_API_KEY` o `OPENAI_API_KEY`                         | No                                      | Activan el recomendador y Luna.                                                    |
+| `AI_MODEL`                                                | No                                      | Modelo del proveedor elegido.                                                      |
+| `BLOB_READ_WRITE_TOKEN`                                   | No                                      | Si existe, las imágenes se guardan en Vercel Blob en lugar del disco local.        |
+| `WHATSAPP_TOKEN`, `WHATSAPP_PHONE_NUMBER_ID`              | No                                      | API de WhatsApp de Meta. Sin alguno de los dos, el webhook queda desactivado.      |
+| `WHATSAPP_VERIFY_TOKEN`, `WHATSAPP_APP_SECRET`            | No                                      | Verificación y firma de los mensajes de Meta.                                      |
+| `WHATSAPP_PUBLIC_NUMBER`                                  | No                                      | Número público para el enlace de chat. Usá un número propio, no un ejemplo.        |
+| `WHATSAPP_DEFAULT_REFUGIO_SLUG`                           | No                                      | Sede por defecto del canal de WhatsApp.                                            |
+| `DEV_EXPONER_TOKEN_RESET`                                 | No                                      | Solo desarrollo. Expone el token de recuperación en la respuesta.                  |
+| `DEV_TLS_INSECURE`                                        | No                                      | Solo desarrollo, ante un fallo local de certificado. No lo uses en producción.     |
 
 ### Frontend
 
-| Variable | Obligatoria | Para qué sirve |
-|----------|-------------|----------------|
-| `VITE_API_URL` | No | Ruta de la API. En local, `/api` usa el proxy de Vite. |
-| `VITE_SITE_URL` | No | Origen público de los QR. Vacío usa el origen abierto en el navegador. |
-| `VITE_GEOCODING_URL` | No | Servicio de búsqueda de direcciones del mapa. |
-| `VITE_GOOGLE_CLIENT_ID` | No | Botón de acceso con Google. |
-| `VITE_WHATSAPP_NUMBER` | No | Número para enlaces de WhatsApp del frontend. |
-| `VITE_INSTAGRAM_URL`, `VITE_FACEBOOK_URL`, `VITE_LINKEDIN_URL` | No | Enlaces del pie de página. |
+| Variable                                                       | Obligatoria | Para qué sirve                                                         |
+| -------------------------------------------------------------- | ----------- | ---------------------------------------------------------------------- |
+| `VITE_API_URL`                                                 | No          | Ruta de la API. En local, `/api` usa el proxy de Vite.                 |
+| `VITE_SITE_URL`                                                | No          | Origen público de los QR. Vacío usa el origen abierto en el navegador. |
+| `VITE_GEOCODING_URL`                                           | No          | Servicio de búsqueda de direcciones del mapa.                          |
+| `VITE_GOOGLE_CLIENT_ID`                                        | No          | Botón de acceso con Google.                                            |
+| `VITE_WHATSAPP_NUMBER`                                         | No          | Número para enlaces de WhatsApp del frontend.                          |
+| `VITE_INSTAGRAM_URL`, `VITE_FACEBOOK_URL`, `VITE_LINKEDIN_URL` | No          | Enlaces del pie de página.                                             |
 
 ## Pruebas
 
@@ -382,13 +382,17 @@ Año lectivo: [Completar].
 
 ## Scripts útiles
 
-| Dónde | Comando | Qué hace |
-|-------|---------|----------|
-| `backend/` | `npm run dev` | API con recarga |
-| `backend/` | `npm start` | API sin recarga |
-| `backend/` | `npm run seed` | Datos de demostración, solo fuera de producción |
-| `backend/` | `npm run create-admin` | Crea o actualiza el administrador de una sede |
-| `backend/` | `npm test` | Pruebas de seguridad |
-| `frontend/` | `npm run dev` | Servidor de desarrollo |
-| `frontend/` | `npm run build` | Build de producción |
-| `frontend/` | `npm run preview` | Vista previa de ese build |
+| Dónde       | Comando                | Qué hace                                        |
+| ----------- | ---------------------- | ----------------------------------------------- |
+| `backend/`  | `npm run dev`          | API con recarga                                 |
+| `backend/`  | `npm start`            | API sin recarga                                 |
+| `backend/`  | `npm run seed`         | Datos de demostración, solo fuera de producción |
+| `backend/`  | `npm run create-admin` | Crea o actualiza el administrador de una sede   |
+| `backend/`  | `npm test`             | Pruebas de seguridad                            |
+| `frontend/` | `npm run dev`          | Servidor de desarrollo                          |
+| `frontend/` | `npm run build`        | Build de producción                             |
+| `frontend/` | `npm run preview`      | Vista previa de ese build                       |
+
+## Integrantes
+
+LOPEZ Lara - Rivalta Ariela - Roggero Estefania
