@@ -395,4 +395,4 @@ Año lectivo: [Completar].
 
 ## Integrantes
 
-LOPEZ Lara - Rivalta Ariela - Roggero Estefania
+Lopez Lara - Rivalta Ariela - Roggero Estefania
