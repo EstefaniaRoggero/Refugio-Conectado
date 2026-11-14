@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-cream-50 text-brown-dark font-sans antialiased overflow-x-hidden;
+  }
+  .dark body,
+  html.dark body {
+    @apply bg-brown-dark text-cream-50;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 sm:px-6 sm:py-3 rounded-2xl bg-terracotta text-white font-medium
+    shadow-soft hover:bg-terracotta-dark transition-all duration-300 hover:shadow-card active:scale-[0.98];
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 sm:px-6 sm:py-3 rounded-2xl bg-cream-200 text-brown-dark font-medium
+    border border-cream-200 hover:bg-cream-100 transition-all duration-300;
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 sm:px-6 sm:py-3 rounded-2xl border-2 border-terracotta text-terracotta
+    font-medium hover:bg-terracotta hover:text-white transition-all duration-300;
+  }
+  /* 16px evita el zoom automático de iOS al enfocar un campo */
+  .input-field {
+    @apply w-full min-w-0 px-4 py-2.5 sm:py-3 text-base rounded-xl border border-cream-200 bg-warm-white text-brown-dark
+    placeholder:text-brown-soft/60 focus:outline-none focus:ring-2 focus:ring-terracotta/30 focus:border-terracotta transition;
+  }
+  .card {
+    @apply bg-warm-white rounded-xl sm:rounded-2xl shadow-soft border border-cream-200/50 overflow-hidden;
+  }
+  .dark .card {
+    @apply bg-brown-soft/20 border-brown-soft/30;
+  }
+  .section-title {
+    @apply text-2xl sm:text-3xl md:text-4xl font-bold text-brown-dark leading-tight;
+  }
+  .section-subtitle {
+    @apply text-brown-soft text-base sm:text-lg max-w-2xl;
+  }
+}
+
+@media (max-width: 639px) {
+  /* Mantiene el contenido compacto y evita tarjetas desproporcionadas en teléfono. */
+  .card.p-12,
+  .card.p-10,
+  .card.p-8,
+  .card.p-6,
+  .card.p-5 {
+    padding: 1rem;
+  }
+
+  table {
+    font-size: 0.75rem;
+  }
+
+  th,
+  td {
+    white-space: nowrap;
+  }
+
+  .swal2-popup {
+    width: calc(100% - 2rem) !important;
+    padding: 1rem !important;
+  }
+}
+
+/* SweetAlert2 custom */
+.swal2-popup {
+  border-radius: 1.25rem !important;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+/* Leaflet (OpenStreetMap) */
+.refugios-map .leaflet-container {
+  z-index: 0;
+  font-family: inherit;
+}

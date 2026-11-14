@@ -1,0 +1,18 @@
+import { create } from 'zustand';
+import { persist } from 'zustand/middleware';
+
+const useAuthStore = create(
+  persist(
+    (set) => ({
+      user: null,
+      token: null,
+      isAuthenticated: false,
+      setAuth: (user, token) => set({ user, token, isAuthenticated: true }),
+      updateUser: (user) => set({ user }),
+      logout: () => set({ user: null, token: null, isAuthenticated: false }),
+    }),
+    { name: 'refugio-auth' }
+  )
+);
+
+export default useAuthStore;

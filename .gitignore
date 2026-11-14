@@ -1,0 +1,21 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+.vercel/
+backend/uploads/*
+!backend/uploads/.gitkeep
+*.log
+.DS_Store
+coverage/
+
+# Respaldos y credenciales: nunca se versionan (los scripts de database/ sí)
+/*.sql
+*.sql.bak
+*.dump
+backups/
+respaldos/
+*.pem
+*.key
+
